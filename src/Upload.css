@@ -1,0 +1,35 @@
+.prev_img{
+    max-height:200px;
+    max-width:400px;
+    border: 2px solid rgb(8, 4, 4);
+    margin-top: 15px;
+
+}
+.btn_upload{
+  background-color: #6110d3; /* Green */
+  border-radius: 20px;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.img_choose{
+background-color: #6110d3; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
