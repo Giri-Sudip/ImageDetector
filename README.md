@@ -3,6 +3,7 @@
 - Reactjs for FrontEnd
 - Python FastApi for image api.
 - OpenCV for face detection
+
 In this project from frontend on clicking upload button, this image is take by api made with FastApi and is send to OpenCV. OpenCV operates to the image and display in the new python window.
 
 ### Codes for different part of this project
