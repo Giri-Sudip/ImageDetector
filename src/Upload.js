@@ -3,26 +3,39 @@ import './Upload.css'
 import axios from 'axios';
 
 const Upload = () => {
-    const [file, setFile] = useState();
+    const [File, setFile] = useState();
+    const [fileURL, setFileURL] = useState();
+
 
 
 
     const handleChange = (event) => {
-        setFile(URL.createObjectURL(event.target.files[0]))
+
+        setFile((event.target.files[0]))
+
+        setFileURL(URL.createObjectURL(event.target.files[0]))
+
+
     }
     const submitForm = () => {
         const formData = new FormData();
-        formData.append('file', file);
-        
+        formData.append('file', File);
+
 
         axios
-            .post('http://127.0.0.1:8000/images/', formData)
-            console.log(formData)
-            
-            .then((_res) => {
+            .post('http://127.0.0.1:8000/images', formData, {
+                headers: {
+                    accept: 'multipart/form-data',
+                }
+
+            })
+
+            .then(() => {
                 alert('file upload succcess');
             })
-            .catch((err) => alert("File Upload Error"))
+            .catch(() => alert("File Upload Error"))
+        return formData
+
 
     }
 
@@ -30,7 +43,7 @@ const Upload = () => {
     return (
         <>
             <input className='img_choose' type="file" onChange={handleChange} />
-            <img src={file} className='prev_img' alt='img' />
+            <img src={fileURL} className='prev_img' alt='img' />
             <button className='btn_upload' onClick={submitForm}>Upload</button>
         </>
     );
