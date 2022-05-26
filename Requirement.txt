@@ -1,9 +1,0 @@
-to start front part run npm
-At first run main.py in virtual environment
-change file directory if necessary
-run uvicorn server
-##I tried to make post and get request from postman but it didn't work##
-SO use Swagger UI(To use, use <server address/docs> eg.127.0.0.1:8000/docs)
-Make post and get request using swagger ui
-Now run face-detector.py 
-Post Image will be displayed detecting face with green rectangle
