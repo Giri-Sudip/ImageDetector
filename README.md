@@ -32,7 +32,7 @@ sudo pip3 install virtualenv
 ```
 ### To install venv
 ```
-virtaulenv venv
+virtualenv venv
 ```
 ### To activate virtual environment
 ```
@@ -59,3 +59,13 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 ```
 
+### To view the running process
+```
+ps -a
+```
+
+### To kill the running process
+```
+kill <pricess_id>
+e.g kill 20149
+```
