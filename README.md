@@ -19,3 +19,42 @@ uvicorn <api_file_name>:app --reload
 I have used python3 so code to run file is:-
 ```
 python3 <python_file_name> (ex. python3 face_detector.py)
+
+
+## Commands used for setup:
+### To install python in linux
+```
+sudo apt-get install python3-api
+```
+### For installing virtual env
+```
+sudo pip3 install virtualenv
+```
+### To install venv
+```
+virtaulenv venv
+```
+### To activate virtual environment
+```
+source venv/bin/activate
+```
+### To install uvicorn server
+```
+pip install "uvicorn[standard]"
+```
+### To install fast api
+```
+pip install fastapi
+```
+### To install multi-part library
+```
+pip install python-multipart
+```
+### Export all library to requirements.txt
+```
+pip > requirements.txt
+```
+### Install all library from requirements.txt
+pip install -r requirements.txt
+
+
