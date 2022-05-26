@@ -1,0 +1,7 @@
+# Ignoring backend files
+BackEnd/venv
+BackEnd/__pycache__
+
+
+# ignoring front end files
+FrontEnd/node_modules
